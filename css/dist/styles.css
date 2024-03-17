@@ -1,14 +1,17 @@
 h1 {
   font-family: Roboto;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 48px;
   letter-spacing: 0em;
   text-align: center;
 }
 @media (min-width: 964px) {
   h1 {
     text-align: left;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90px;
   }
 }
 h2 {
@@ -139,7 +142,7 @@ main {
 }
 button.btn_basic {
   width: 200px;
-  height: 54px;
+  height: 45px;
   top: 607px;
   left: 247px;
   border-radius: 20px;
@@ -148,6 +151,11 @@ button.btn_basic {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  button.btn_basic {
+    height: 54px;
+  }
 }
 button:hover {
   box-shadow: -1px 0px 4px #6A6D9E;
@@ -205,14 +213,14 @@ button.visible-xs {
 .header {
   background: url(../../imgs/BG-mob.png);
   background-size: cover;
-  padding-top: 80px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 @media (min-width: 964px) {
   .header {
     background: url(../../imgs/BG.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 50px;
   }
 }
 .header__container {
@@ -227,7 +235,7 @@ button.visible-xs {
   flex: 1 1 40%;
 }
 .header__container .header__content--img img {
-  max-width: 100%;
+  max-width: 80%;
 }
 @media (min-width: 964px) {
   .header__container {
@@ -239,11 +247,17 @@ button.visible-xs {
   .header__container .header__content--body {
     text-align: left;
   }
+  .header__container .header__content--img {
+    flex: 1 1 40%;
+  }
+  .header__container .header__content--img img {
+    max-width: 100%;
+  }
 }
 .header__links {
   display: flex;
   width: 100%;
-  margin: 30px auto;
+  margin: 20px auto;
   font-size: 23px;
 }
 .header__links .header__links--item {

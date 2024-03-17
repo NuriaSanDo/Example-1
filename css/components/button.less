@@ -2,7 +2,7 @@
 button {
     &.btn_basic {
         width: 200px;
-        height: 54px;
+        height: 45px;
         top: 607px;
         left: 247px;
         border-radius: 20px;
@@ -11,6 +11,9 @@ button {
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: 768px) {
+            height: 54px;
+        }
     }
 
     &:hover {
