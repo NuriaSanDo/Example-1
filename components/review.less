@@ -1,0 +1,60 @@
+//bubble reviews
+.review__container {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+
+    &.right {
+        flex-direction: row-reverse;
+
+        .review__bubble-container {
+            border-radius: 30px 30px 0px 30px;
+        }
+
+        .review__bubble {
+            margin-right: 20px;
+
+        }
+
+        .review__bubble-container {
+            color: @white;
+            background-color: @secondary_light;
+        }
+
+        .review__bubble-date {
+            margin-top: 4px;
+            text-align: right;
+        }
+    }
+
+    &.left {
+        .review__bubble-container {
+            border-radius: 30px 30px 30px 0px;
+        }
+
+        .review__bubble {
+            margin-left: 20px;
+        }
+
+        .review__bubble-date {
+            margin-top: 4px;
+        }
+    }
+
+    .revieww__image {
+        flex: 1 1 5%;
+    }
+
+    .review__bubble {
+        flex: 1 1 85%;
+    }
+
+    .review__bubble-container {
+        background: @white;
+        padding: 20px 40px;
+        display: block;
+    }
+    @media (min-width: 964px) {  
+        
+    }
+}
