@@ -1,0 +1,66 @@
+//buttons
+button {
+    &.btn_basic {
+        width: 200px;
+        height: 54px;
+        top: 607px;
+        left: 247px;
+        border-radius: 20px;
+        border: none;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover {
+        box-shadow: -1px 0px 4px @secondary_light;
+        cursor: pointer;
+    }
+
+    &.btn_basic--blue {
+        background-color: @secondary_dark;
+    }
+
+    &.btn_basic--pink {
+        background-color: @accent;
+    }
+    &.btn_basic--white {
+        background-color: @white;
+        color: @secondary_dark;
+        border: 1px solid @secondary_dark;
+        span {
+            color: @secondary_dark;
+        }
+    }
+    &.sticky {
+        position: fixed;
+        top: 93%;
+        bottom: 100%;
+        left: 0;
+        border: 0;
+        border-radius: 0;
+        width: 100%;
+        font-size: 20px;
+        z-index: 99;
+        @media (min-width: 964px) {
+            display: none;
+        }
+    }
+    .btn_basic--text {
+        color: @white;
+
+    }
+    &.hidden-xs {
+        display:none;
+        @media (min-width: 964px) {
+            display:inline-flex;
+        }
+    }
+    &.visible-xs {
+        display:inline-flex;
+        @media (min-width: 964px) {
+            display:none;
+        }
+    }
+}

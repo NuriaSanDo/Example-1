@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/dist/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <!-- nav hamburguesa, solo mobile-->
+
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+            <input type="checkbox" />
+
+            <!--
+          Some spans to act as a hamburger.         
+          -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+            <ul id="menu">
+                <a href="#">
+                    <li>Team</li>
+                </a>
+                <a href="#">
+                    <li>Services</li>
+                </a>
+                <a href="#">
+                    <li>Press</li>
+                </a>
+                <a href="#">
+                    <li>Projects</li>
+                </a>
+                <a href="#">
+                    <li>Fees</li>
+                </a>
+                <a href="#">
+                    <li>Affiliate</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIN NAV HAMBURGUESA-->
+    <!-- HEADER-->
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="imgs/Logo1.png" />
+                </div>
+                <div class="header__links">
+                    <a class="header__links--item" href="#">Home</a>
+                    <a class="header__links--item" href="#">Feature</a>
+                    <a class="header__links--item" href="#">Pricing</a>
+                </div>
+                <div class="header__submit">
+                    <button class="btn_basic  btn_basic--pink caption open-modal"><span class="btn_basic--text ">Sign
+                            up</span></button>
+                </div>
+            </div>
+            <div class="header__container">
+                <div class="header__content--body white">
+                    <h1>Smart Banking for freelancers</h1>
+                    <p>
+                        With Draft, book keeping, banking, and invoices are all in one place. You will always know where
+                        you stand.
+                    </p>
+                    <p class="header__submit">
+                        <button class="btn_basic  btn_basic--blue caption open-modal"><span class="btn_basic--text ">Register Now</span>&nbsp;&nbsp;<img src="imgs/Arrow-Right 1.png"/></button>
+                    </p>
+                </div>
+                <div class="header__content--img"><img src="imgs/Phone1.png" /></div>
+            </div>
+        </div>
+    </header>
+    <!-- FIN HEADER-->
+    <!-- MAIN CONTENT-->
+    <main class="main__container">
+        <div class="container">
+            <!-- CARD 1 LEFT RIGHT TOP BOTTOM-->
+            <section class="card">
+                <div class="card__content right">
+                    <div class="card__content--right">
+                        <img src="imgs/CreditCard.png" />
+                    </div>
+                    <div class="card__content--left">
+                        <p class="card__content--title primary">One card for all your payments</h1>
+                        <p class="card__content--body">Get 3% back on everything you buy with the Draft card. Register
+                            today and enjoy every aspect
+                            of your business. </p>
+
+                    </div>
+                </div>
+            </section>
+            <!-- CARD 2 RIGHT LEFT TOP BOTTOM-->
+            <section class="card">
+                <div class="card__content left">
+                    <div class="card__content--right">
+                        <div class="card__finances__module">
+                            <div class="card__finances__container card__finances__container--firstContainer">
+                                <p class="card__finances__container--text">Balance</p>
+                                <p class="card__finances__container--quantity">$5,600</p>
+                            </div>
+                            <div class="card__finances__container card__finances__container--secondContainer">
+                                <p class="card__finances__container--text ">Last Transaction</p>
+                                <p class="card__finances__container--quantity">$230</p>
+                            </div>
+                            <div class="card__finances__container card__finances__container--thirdContainer">
+                                <p class="card__finances__container--quantity"><img src="imgs/grafica.png"></p>
+                            </div>
+                        </div>
+                        <p class="card__btn_mobile"><button class="btn_basic  btn_basic--blue caption open-modal visible-xs"><span class="btn_basic--text ">Learn More</span>&nbsp;&nbsp;<img src="imgs/Arrow-Right 1.png"/></button></p>
+                    </div>
+                    <div class="card__content--left">
+                        <p class="card__content--title primary">Manage your finances like a pro in no time</h1>
+                        <p class="card__content--body">With Draft, book keeping, banking, and invoices are all in one
+                            place. You will always know
+                            where you stand. </p>
+                        <p><button class="btn_basic  btn_basic--blue caption open-modal hidden-xs"><span class="btn_basic--text ">Learn More</span>&nbsp;&nbsp;<img src="imgs/Arrow-Right 1.png"/></button></p>
+                    </div>
+                </div>
+            </section>
+            <!-- CARD 3 LEFT RIGHT TOP BOTTOM-->
+            <section class="card">
+                <div class="card__content right">
+                    <div class="card__content--right">
+                        <div class="review__container left">
+                            <div class="revieww__image"><img src="imgs/review1.png" /></div>
+                            <div class="review__bubble">
+                                <div class="review__bubble-container">Hi Mike, How can I help you?</div>
+                                <div class="review__bubble-date caption">Clair, 12:22 pm</div>
+                            </div>
+                        </div>
+                        <div class="review__container right">
+                            <div class="revieww__image"><img src="imgs/review2.png" /></div>
+                            <div class="review__bubble">
+                                <div class="review__bubble-container">My credit card is stolen...</div>
+                                <div class="review__bubble-date caption">Mike, 12:24 pm</div>
+                            </div>
+                        </div>
+                        <div class="review__container left">
+                            <div class="revieww__image"><img src="imgs/review1.png" /></div>
+                            <div class="review__bubble">
+                                <div class="review__bubble-container">Ok. No problem. We will take care of this.</div>
+                                <div class="review__bubble-date caption">Clair, 12:25 pm</div>
+                            </div>
+                        </div>
+                        <p class="card__imagen--mobile visible-xs"><img src="imgs/Profile_Images.png" /></p>
+                    </div>
+                    <div class="card__content--left">
+                        <p class="card__content--title primary">We support you in 5 different languages</h1>
+                        <p class="card__content--body">Our support team in here to help you in 5 languages - English,
+                            French, Spanish,Polish and
+                            German. </p>
+                        <p class="card__imagen--desktop hidden-xs"><img src="imgs/Profile_Images.png" /></p>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN CARDS-->
+            <!-- INICIO MIDDLE TITLE MODULE-->
+            <section class="middleTitle">
+                <div class="middleTitle__container">
+                    <div class="middleTitle__container--title"><span class="secondary">An exceptional service,</span>
+                        <span class="accent">at the right price.</span>
+                    </div>
+                    <div class="middleTitle__container--subtitle">Start with our free plan and switch to premium as you
+                        grow</div>
+                </div>
+            </section>
+            <!-- FIN MIDDLE TITLE MODULE-->
+            <!-- INICIO SWIPPER MODULE-->
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_container">
+                            <p class="slider_container--title black">Free</p>
+                            <p class="slider_container--qty black">$0/m</p>
+                            <p class="slide_container--description secondary">Manage your business with a simple and
+                                efficient account</p>
+                            <p class="slide_container--btn"><button class="btn_basic  btn_basic--white caption open-modal"><span class="btn_basic--text ">Sign up</span></button></p>
+                            <p class="slide_container--image"><img src="imgs/CreditCard.png" /></p>
+                            <div class="slide_container--bullets">
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Multi-user access</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_container">
+                            <p class="slider_container--title black">Free</p>
+                            <p class="slider_container--qty black">$0/m</p>
+                            <p class="slide_container--description secondary">Manage your business with a simple and
+                                efficient account</p>
+                            <p class="slide_container--btn"><button class="btn_basic  btn_basic--white caption open-modal"><span class="btn_basic--text ">Sign up</span></button></p>
+                            <p class="slide_container--image"><img src="imgs/CreditCard.png" /></p>
+                            <div class="slide_container--bullets">
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Multi-user access</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Free payment to other Draft accounts</span>
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_container">
+                            <p class="slider_container--title black">Free</p>
+                            <p class="slider_container--qty black">$0/m</p>
+                            <p class="slide_container--description secondary">Manage your business with a simple and
+                                efficient account</p>
+                            <p class="slide_container--btn"><button class="btn_basic  btn_basic--white caption open-modal  open-modal"><span class="btn_basic--text ">Sign up</span></button></p>
+                            <p class="slide_container--image"><img src="imgs/CreditCard.png" /></p>
+                            <div class="slide_container--bullets">
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Multi-user access</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Free payment to other Draft accounts</span>
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_container">
+                            <p class="slider_container--title black">Free</p>
+                            <p class="slider_container--qty black">$0/m</p>
+                            <p class="slide_container--description secondary">Manage your business with a simple and
+                                efficient account</p>
+                            <p class="slide_container--btn"><button class="btn_basic  btn_basic--white caption open-modal"><span class="btn_basic--text  open-modal">Sign up</span></button></p>
+                            <p class="slide_container--image"><img src="imgs/CreditCard.png" /></p>
+                            <div class="slide_container--bullets">
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">10 free local transfer</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Multi-user access</span>
+                                </p> 
+                                <p class="slide_container--item">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                                <p class="slide_container--item disabled">
+                                    <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                    <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                    <div class="slide_container">
+                        <p class="slider_container--title black">Free</p>
+                        <p class="slider_container--qty black">$0/m</p>
+                        <p class="slide_container--description secondary">Manage your business with a simple and
+                            efficient account</p>
+                        <p class="slide_container--btn"><button class="btn_basic  btn_basic--white caption open-modal"><span
+                                    class="btn_basic--text  open-modal">Sign up</span></button></p>
+                        <p class="slide_container--image"><img src="imgs/CreditCard.png" /></p>
+                        <div class="slide_container--bullets">
+                            <p class="slide_container--item">
+                                <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                <span class="slide_container--itemTxt">10 free local transfer</span>
+                            </p> 
+                            <p class="slide_container--item">
+                                <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                <span class="slide_container--itemTxt">10 free local transfer</span>
+                            </p> 
+                            <p class="slide_container--item">
+                                <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                <span class="slide_container--itemTxt">Multi-user access</span>
+                            </p> 
+                            <p class="slide_container--item">
+                                <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                            </p> 
+                            <p class="slide_container--item disabled">
+                                <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                            </p> 
+                            <p class="slide_container--item disabled">
+                                <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                <span class="slide_container--itemTxt">Prepaid debit cards</span>
+                            </p> 
+                            <p class="slide_container--item disabled">
+                                <span class="slide_container--itemImg"><img src="imgs/activeicon.png"/></span>
+                                <span class="slide_container--itemTxt">Free payment to other Draft accounts</span>
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN SWIPPER-->
+            <!-- INICIO MIDDLE TITLE MODULE-->
+            <section class="middleTitle">
+                <div class="middleTitle__container">
+                    <div class="middleTitle__container--title"><span class="secondary">Frequently </span>
+                        <span class="accent">asked questions.</span>
+                    </div>
+                    <div class="middleTitle__container--subtitle">If you are not sure whether Draft is suitable is for
+                        you or not, do not worry. We are here to explain everything you might want to know</div>
+                </div>
+            </section>
+            <!-- FIN MIDDLE TITLE MODULE-->
+            <!-- INICIO ACCORDIONS FAQS-->
+            <div class="accordion">
+                <div class="accordion__intro">
+                    <h4>What is the difference between Draft and a traditional bank account?</h4>
+                    <span class="accordion__intro--plusSign"><img src="imgs/plus-sign.svg"/></span>
+                    <span class="accordion__intro--minusSign"><img src="imgs/minus-sign.svg"/></span>
+                </div>
+                <div class="accordion__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta molestie bibendum. Proin imperdiet dolor ac quam tristique vulputate. Donec quis lorem ipsum. Nam sagittis, mauris id dapibus tincidunt, felis est interdum erat, at commodo risus odio et justo. Vestibulum a dapibus urna. </p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion__intro">
+                    <h4>What if I withdraw money abroad?</h4>
+                    <span class="accordion__intro--plusSign"><img src="imgs/plus-sign.svg"/></span>
+                    <span class="accordion__intro--minusSign"><img src="imgs/minus-sign.svg"/></span>
+                </div>
+                <div class="accordion__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta molestie bibendum. Proin imperdiet dolor ac quam tristique vulputate. Donec quis lorem ipsum. Nam sagittis, mauris id dapibus tincidunt, felis est interdum erat, at commodo risus odio et justo. Vestibulum a dapibus urna. </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__intro">
+                    <h4>Can I cancel my subscrption or switch to another plan anytime?</h4>
+                    <span class="accordion__intro--plusSign"><img src="imgs/plus-sign.svg"/></span>
+                    <span class="accordion__intro--minusSign"><img src="imgs/minus-sign.svg"/></span>
+                </div>
+                <div class="accordion__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta molestie bibendum. Proin imperdiet dolor ac quam tristique vulputate. Donec quis lorem ipsum. Nam sagittis, mauris id dapibus tincidunt, felis est interdum erat, at commodo risus odio et justo. Vestibulum a dapibus urna. </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__intro">
+                    <h4>What happens if I withdraw more than $250?</h4>
+                    <span class="accordion__intro--plusSign"><img src="imgs/plus-sign.svg"/></span>
+                    <span class="accordion__intro--minusSign"><img src="imgs/minus-sign.svg"/></span>
+                </div>
+                <div class="accordion__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta molestie bibendum. Proin imperdiet dolor ac quam tristique vulputate. Donec quis lorem ipsum. Nam sagittis, mauris id dapibus tincidunt, felis est interdum erat, at commodo risus odio et justo. Vestibulum a dapibus urna. </p>
+                </div>
+            </div>
+            <!-- FIN ACCORDIONS FAQS-->
+        </div>
+
+    </main>
+    <!-- FIN MAIN CONTENT-->
+    <!-- FOOTER-->
+    <footer class="footer__container">        
+            <div class="footer__content container">
+                <div class="footer__content--left">
+                    <img src="imgs/Logo1.png" />
+                    <p>
+                        Copyright © 2020  Draft LLC.<br class="footer_content--br"/>
+                        All rights reserved.
+                    </p>
+                </div>
+                <div class="footer__content--right">
+                    <div class="footer__content--col hidden-xs">
+                        <a href="#" class="footer__content--colItem">
+                            Team
+                        </a>
+                        <a href="#" class="footer__content--colItem">
+                           Fees
+                        </a>
+                        <a href="#" class="footer__content--colItem">
+                           Press
+                        </a>
+                    </div>
+                    <div class="footer__content--col hidden-xs">
+                        <a href="#" class="footer__content--colItem">
+                            Services
+                        </a>
+                        <a href="#" class="footer__content--colItem">
+                           Projects
+                        </a>
+
+                        <a href="#" class="footer__content--colItem">
+                            Affiliate
+                        </a>
+                    </div>
+                    <div class="footer__content--col">
+                        <a href="#" class="footer__content--colItem">
+                           Terms of use
+                        </a>
+                        <a href="#" class="footer__content--colItem">
+                           Privacy policy
+                        </a>
+                        <a href="#" class="footer__content--colItem">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--FIN FOOTER-->
+    <script src="js/scripts.js"></script>
+
+
+
+<!-- MODAL-->
+<div class="modal">
+    <span class="modal-backdrop close-modal"></span>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Register Now!</h2>
+        <a class="close-modal accent">&times</a>
+      </div>
+      <div class="modal-body">
+    
+        <p>
+            <form>
+                <p><input type="text" id="name" placeholder="Write your name"/></p>
+                <p><input type="email" id="email" placeholder="Write your email"></p>
+                <p>* <input type="checkbox" id="termsconditions" /> <span class="caption">I accept terms and conditions.</span></p>
+                <p class="modal__form--btn"><button class="btn_basic  btn_basic--pink caption"><span class="btn_basic--text  caption">Register</span></button></p>
+            </form>
+        </p>
+      </div>
+    </div>
+</div>
+<!-- FIN DE MODAL-->
+</body>
+</html>
