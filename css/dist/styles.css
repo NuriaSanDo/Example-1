@@ -841,11 +841,6 @@ nav {
   z-index: 1000;
   width: 320px;
 }
-@media (min-width: 964px) {
-  .modal .modal-content {
-    left: 45%;
-  }
-}
 .modal .modal__form--btn {
   text-align: center;
 }
@@ -883,11 +878,6 @@ nav {
 }
 .modal.visible .modal-content {
   top: 25%;
-}
-@media (min-width: 964px) {
-  .modal.visible .modal-content {
-    left: 45%;
-  }
 }
 footer {
   background-color: #DCE2F0;
