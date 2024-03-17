@@ -262,10 +262,10 @@ button.visible-xs {
     text-align: center;
   }
 }
-.header__submit {
+.header__content--body .header__submit {
   margin-top: 30px;
 }
-.header__submit .header__btn {
+.header__content--body .header__submit .header__btn {
   background-color: #F44E77;
   margin-top: 50px;
 }
