@@ -1,7 +1,8 @@
-TO TEST THE CODE, PLEASE, GO TO MY NETLIFY URL:
+I uploaded a live version of my code in the following url:
 
 https://main--idyllic-florentine-b9fdfe.netlify.app/
 
+To compile the less files on your localhost you need node.js installed on your PC and a Less compiler in VS Code.
 
 README ES
 Explicación del código.
