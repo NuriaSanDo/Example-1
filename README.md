@@ -1,3 +1,8 @@
+TO TEST THE CODE, PLEASE, GO TO MY NETLIFY URL:
+
+https://main--idyllic-florentine-b9fdfe.netlify.app/
+
+
 README ES
 Explicación del código.
 
