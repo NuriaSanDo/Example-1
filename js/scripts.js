@@ -75,9 +75,9 @@ let observer = new IntersectionObserver(function (entries, observer) {
 	console.log('An intersection happened!');
 	for (let entry of entries) {
 		if(!entry.isIntersecting) {
-            document.querySelector('.header__links').classList.add('sticky');
+            document.querySelector('.header__container').classList.add('sticky');
         } else {
-            document.querySelector('.header__links').classList.remove('sticky');
+            document.querySelector('.header__container').classList.remove('sticky');
         }
 	}
 });
