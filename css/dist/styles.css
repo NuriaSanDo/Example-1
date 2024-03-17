@@ -276,6 +276,31 @@ button.visible-xs {
     text-align: center;
   }
 }
+.header__links.sticky {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  font-size: 23px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #F44E77;
+  z-index: 9999;
+  margin-top: 0;
+  padding: 10px 0;
+}
+@media (min-width: 964px) {
+  .header__links.sticky {
+    display: flex;
+    width: 50%;
+    margin: 30px auto;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
+    position: unset;
+    padding: 0;
+  }
+}
 .header__content--body .header__submit {
   margin-top: 30px;
 }
