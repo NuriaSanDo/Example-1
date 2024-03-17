@@ -14,7 +14,6 @@
 <body>
     
     <!-- nav hamburguesa, solo mobile-->
-
     <nav role="navigation">
         <div id="menuToggle">
             <!--
@@ -35,7 +34,7 @@
           but hey, it's pure CSS magic.
           -->
             <ul id="menu">
-                <a href="#">
+                <a href="#home">
                     <li>Team</li>
                 </a>
                 <a href="#">
@@ -58,14 +57,14 @@
     </nav>
     <!-- FIN NAV HAMBURGUESA-->
     <!-- HEADER-->
-    <header class="header">
+    <header class="header"  id="home">
         <div class="container">
             <div class="header__container">
                 <div class="header__logo">
-                    <img src="imgs/Logo1.png" />
+                    <a  href="#home"><img src="imgs/Logo1.png" /></a>
                 </div>
                 <div class="header__links">
-                    <a class="header__links--item" href="#">Home</a>
+                    <a class="header__links--item" href="#home">Home</a>
                     <a class="header__links--item" href="#feature">Feature</a>
                     <a class="header__links--item" href="#pricing">Pricing</a>
                 </div>
