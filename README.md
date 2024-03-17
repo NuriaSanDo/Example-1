@@ -48,7 +48,7 @@ click en cualquier CTA (el mismo en todos los casos y sin funcionalidad).
 Por otro lado, al pensar el diseño del menú de footer en mobile, he visto que el número de opciones presentes es my amplia, algo que puede afectar a la interacción asi que he optado por lo siguiente:
 
 - Los elementos que si o sí deben estar presentes como son Terms of use, Privacy policy, Contact us quedan en la parte inferior en el footer y el resto de elementos los he trasladado a un menú hamburguesa que se despliega de izquierda a derecha.
-
+- No aparece tampoco en el diseño, pero en los enlaces que aparecen en la parte superior del diseño (home, feature, pricing) los he considerado como anclas, y cuando se hace scroll y desaparecen del viewport, aparece un menú sticky en su lugar.
 
 README ENG
 Explanation of the code.
@@ -97,5 +97,5 @@ click on any CTA (the same in all cases and without functionality).
 On the other hand, when thinking about the design of the footer menu in mobile, I have seen that the number of options present is very large, something that can affect the interaction so I have opted for the following:
 
 - The elements that must be present such as Terms of use, Privacy policy, Contact us remain at the bottom of the footer and the rest of the elements I have moved them to a hamburger menu that scrolls from left to right.
-
+- It does not appear in the design either, but in the links that appear at the top of the design (home, feature, pricing) I have considered them as anchors, and when you scroll and they disappear from the viewport, a sticky menu appears in their place.
 
