@@ -7,7 +7,7 @@ To compile the less files on your localhost you need node.js installed on your P
 README ES
 Explicación del código.
 
-Para empezar, he tomado como referencia el diseño del Figma siguiente; https://www.figma.com/file/FmIcd7edEvkQGysnQljlvy/Seat-Code---Websites---FE?type=design&node-id=11-2&mode=design&t=RbGTdJwqtWb9c4Cl-0.
+Para empezar, he tomado como referencia el diseño del Figma siguiente; https://www.figma.com/file/FmIcd7edEvkQGysnQljlvy/Seat-Code---Websites---FE?type=design&node-id=11-2&mode=design&t=RbGTdJwqtWb9c4Cl-0. En el caso del diseño del banner, no he podido utilizar la misma imagen de fondo que hay en el Figma, debido a que no está disponible para exportarla, con lo que he improvisado un ajuste utilizando de GIMP para ello.
 
 Requerimientos:
 1. Use Less to create styles, compile Less files to locally generate CSS, and add
@@ -55,6 +55,7 @@ README ENG
 Explanation of the code.
 
 To begin with, I have taken the following Figma design as a reference; https://www.figma.com/file/FmIcd7edEvkQGysnQljlvy/Seat-Code---Websites---FE?type=design&node-id=11-2&mode=design&t=RbGTdJwqtWb9c4Cl-0.
+In the case of the banner design, I could not use the same background image that is in Figma, because it is not available for export, so I improvised a setting using GIMP for it.
 
 Requirements:
 1. Use Less to create styles, compile Less files to locally generate CSS, and add
