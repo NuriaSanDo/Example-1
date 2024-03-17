@@ -121,10 +121,15 @@ section {
   width: 96%;
   margin: auto;
 }
-@media (min-width: 964px) {
+@media (min-width: 768px) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media (min-width: 1024px) {
   .container {
     width: 100%;
-    max-width: 964px;
+    max-width: 900px;
     margin: auto;
   }
 }
@@ -201,6 +206,7 @@ button.visible-xs {
   background: url(../../imgs/BG-mob.png);
   background-size: cover;
   padding-top: 80px;
+  padding-top: 50px;
 }
 @media (min-width: 964px) {
   .header {
@@ -295,10 +301,20 @@ button.visible-xs {
   margin-top: 4px;
 }
 .review__container .revieww__image {
-  flex: 1 1 5%;
+  flex: 1 1 15%;
+}
+@media (min-width: 964px) {
+  .review__container .revieww__image {
+    flex: 1 1 5%;
+  }
 }
 .review__container .review__bubble {
-  flex: 1 1 85%;
+  flex: 1 1 65%;
+}
+@media (min-width: 964px) {
+  .review__container .review__bubble {
+    flex: 1 1 85%;
+  }
 }
 .review__container .review__bubble-container {
   background: #fff;

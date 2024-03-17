@@ -147,12 +147,14 @@ section {
     color: @accent;
 }
 .container {
-    @media (min-width: 964px) {
+    @media (min-width: 768px) {        
+        max-width: 650px;
+    }
+    @media (min-width: 1024px) {
         width: 100%;
-        max-width: @desktop_layout;
+        max-width: 900px;
         margin: auto;
     }
-
     width: 96%;
     margin: auto;
 }
